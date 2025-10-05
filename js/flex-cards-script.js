@@ -13,14 +13,13 @@ projectCards.forEach(projectCard => {
     });    
 });
 
-// A function that makes sure the current cad is open and other cards as closed and their aria-expanded false
+// A function that makes sure the current card is open and other cards are closed with aria-expanded false
 function toggleFlexCard(card) {
     let currentOpenCard = document.querySelector('.project-card.open');
-    console.log(card);
     if (currentOpenCard !== card) {
         currentOpenCard.classList.remove('open');
         currentOpenCard.setAttribute('aria-expanded', 'false');
         card.classList.add('open');
-        card.setAttribute('aria-expanded', 'true')
-    } 
+        card.setAttribute('aria-expanded', 'true');
+    }
 }

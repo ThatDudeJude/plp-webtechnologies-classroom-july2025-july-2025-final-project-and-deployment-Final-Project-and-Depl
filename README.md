@@ -39,7 +39,7 @@ project-root/
 
 ## Deployment
 
-Deployed via Netlify at [https://jm-portfolio.netlify.app](https://jm-portfolio.netlify.app).
+Deployed via Netlify at [https://jude-m-portfolio.netlify.app](https://jude-m-portfolio.netlify.app).
 
 ## Deliverables
 

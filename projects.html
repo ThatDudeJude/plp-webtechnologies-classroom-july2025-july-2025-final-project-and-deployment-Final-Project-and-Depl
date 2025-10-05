@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jude Muthini's programming portfolio">
     <meta name="keywords" content="portfolio, web programming, projects, python, javascript, react, django">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex-cards.css">
     <title>Jude's Portfolio</title>
 </head>
 <body>
@@ -12,89 +15,96 @@
         <!-- Header -->
 
         <header class="header py-1" role="banner">
-            <div class="container">
+            <div class="container flex-row-space-between">
                 <h1 class="logo">Jude's Portfolio</h1>
                 <!-- Nav -->
-                 <nav>
-                    <ul>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">My Projects</a></li>
-                        <li><a href="">Contact Me</a></li>
-                    </ul>
+                 <nav class="nav-list-container flex-row-center" role="navigation" aria-label="Main">
+                    <div class="burger"><div class="bars"></div></div>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a class="btn link-btn btn-white-glow" href="index.html">Home</a></li>
+                            <li><a class="active btn link-btn btn-white-glow" href="projects.html">My Projects</a></li>
+                            <li><a class="btn link-btn btn-white-glow" href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </div>
                  </nav>
             </div>
         </header>
 
         <!-- Main Content -->
-         <main >
+         <main class="proficiency-projects-showcase" role="main">
             <!-- Projects and Proficiency -->
-            <section class="proficiency-projects-showcase">
-                <div class="proficiency-projects-showcase-container">
+            <section>
+                <div>
                     <article class="programming-proficiency">
-                        <div class="container">
-                            <h1>Programming Proficiency and Projects</h1>
+                        <div class="container flex-column py-3">
+                            <h1 class="md">Programming Language and Frameworks Proficiency</h1>
                             <div class="progress-bars">
-                                <div>
-                                    <div class="languages">
-                                        <h1>Language</h1>
+                                <div class="flex-row py-2">
+                                    <div class="languages info-card">
+                                        <h1>Languages</h1>
                                         <div class="language">
                                             <p>
-                                                <img src="" alt="">
-                                                <div class="progress-container">
-                                                    <p>70%</p>
-                                                    <div class="progress-bar"></div>
-                                                </div>
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML logo" width="50px">
                                             </p>
+                                            <div class="progress-container">
+                                                <p>70%</p>
+                                                <div class="progress-bar" style="width: 70%"></div>
+                                            </div>                                            
                                         </div>
                                         <div class="language">
                                             <p>
-                                                <img src="" alt="">
-                                                <div class="progress-container">
-                                                    <p>70%</p>
-                                                    <div class="progress-bar"></div>
-                                                </div>
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 logo" width="50px">
                                             </p>
+                                            <div class="progress-container">
+                                                <p>70%</p>
+                                                <div class="progress-bar" style="width: 70%"></div>
+                                            </div>                                            
                                         </div>
                                         <div class="language">
                                             <p>
-                                                <img src="" alt="">
-                                                <div class="progress-container">
-                                                    <p>70%</p>
-                                                    <div class="progress-bar"></div>
-                                                </div>
+                                                <img src="./images/python-original.svg" alt="Python logo" width="50px">
                                             </p>
+                                            <div class="progress-container">
+                                                <p>65%</p>
+                                                <div class="progress-bar" style="width: 65%"></div>
+                                            </div>                                            
                                         </div>
                                         <div class="language">
                                             <p>
-                                                <img src="" alt="">
-                                                <div class="progress-container">
-                                                    <p>70%</p>
-                                                    <div class="progress-bar"></div>
-                                                </div>
+                                                <img src="./images/javascript-original.svg" alt="Javascript Logo" width="50px">
                                             </p>
+                                            <div class="progress-container">
+                                                <p>60%</p>
+                                                <div class="progress-bar" style="width: 60%"></div>
+                                            </div>                                            
                                         </div>
                                     </div>
-                                    <div class="frameworks">
+                                    <div class="frameworks info-card">
                                         <h1>Frameworks</h1>
                                         <div class="framework">
-                                            <p><img src="" alt=""></p>
+                                            <p>
+                                                <img src="./images/django-plain.svg" alt="Django Logo" width="50px">
+                                            </p>
                                             <div class="progress-container">
                                                 <p>60%</p>
-                                                <div class="progress-bar"></div>
+                                                <div class="progress-bar" style="width: 60%;"></div>
                                             </div>
                                         </div>
                                         <div class="framework">
-                                            <p><img src="" alt=""></p>
+                                            <p>
+                                                <img src="./images/react-original.svg" alt="React logo" width="50px">
+                                            </p>
                                             <div class="progress-container">
                                                 <p>60%</p>
-                                                <div class="progress-bar"></div>
+                                                <div class="progress-bar" style="width: 60%"></div>
                                             </div>
                                         </div>
                                         <div class="framework">
-                                            <p><img src="" alt=""></p>
+                                            <p><img src="./images/flask-original-wordmark.svg" alt="Flask logo" width="50px"></p>
                                             <div class="progress-container">
-                                                <p>60%</p>
-                                                <div class="progress-bar"></div>
+                                                <p>50%</p>
+                                                <div class="progress-bar" style="width: 50%"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -102,126 +112,128 @@
                             </div>
                         </div>
                     </article>
-                    <article class="my-projects">
+                    <article class="my-projects py-2">
                         <h1>Projects</h1>
                         <div class="showcase-projects">
                             <div class="flex-cards-container">
                                 <div>
-                                    <div class="project-card">
-                                        <div class="row">
+                                    <div class="project-card open" role="button" tabindex="0" aria-expanded="true" aria-controls="flex-card1">
+                                        <div class="row" id="flex-card1" role="region" aria-labelledby="project-title-1">
                                             <div class="icons">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML5 logo">
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 Logo">
+                                                <img src="./images/javascript-original.svg" alt="Javascript Logo">
+                                                <img src="./images/bootstrap-original-wordmark.svg" alt="Bootstrap Logo">
                                             </div>
                                             <div class="description">
-                                                <h3 class="project-name">Planetesimals</h3>
+                                                <h3 class="project-name" id="project-title-1">Planetesimals</h3>
                                                 <p>A simple website about asteroids and comets built using HTML, JS and Bootstrap.</p>
-                                                <img src="" alt="">
+                                                <img src="./images/projects-related/Planetesimals.gif" alt="Homepage of the Planetesimals Project" width="350px">
                                                 <div class="link-container">
-                                                    <a href="">View on Github</a>
+                                                    <div class="link-container"><a href="https://github.com/ThatDudeJude/Planetesimals.git" class="btn link-btn btn-dark btn-dark-glow" target="_blank">View on Github</a></div>                                        
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="project-card">
-                                        <div class="row">
+                                    <div class="project-card" role="button" tabindex="0" aria-expanded="false" aria-controls="flex-card2">
+                                        <div class="row" id="flex-card2" role="region" aria-labelledby="project-title-2">
                                             <div class="icons">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML5 logo">
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 logo">
+                                                <img src="./images/python-original.svg" alt="Python logo">
+                                                <img src="./images/flask-original-wordmark.svg" alt="Flask logo">
+                                                <img src="./images/sqlalchemy-original-wordmark.svg" alt="SQLAlchemy logo">
+                                                <img src="./images/postgresql-original-wordmark.svg" alt="Postgresql logo">
                                             </div>
                                             <div class="description">
-                                                <h3 class="project-name">Bibliophiliac</h3>
+                                                <h3 class="project-name" id="project-title-2">Bibliophiliac</h3>
                                                 <p>A simple web-based book review app for book lovers that allows users to search for book information, book reviews and add their own reviews.</p>
-                                                <img src="" alt="">
+                                                <img src="./images/projects-related/Bibliophiliac.gif" alt="Book review page of the Bibliophiliac website" width="350px">
                                                 <div class="link-container">
-                                                    <a href="">View on Gihub</a>
+                                                    <a href="https://github.com/ThatDudeJude/Bibliophiliac.git" class="btn link-btn btn-dark btn-dark-glow" target="_blank">View on Github</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="project-card">
-                                        <div class="row">
+                                    <div class="project-card" role="button" tabindex="0" aria-expanded="false" aria-controls="flex-card3">
+                                        <div class="row" id="flex-card3" role="region" aria-labelledby="project-title-3">
                                             <div class="icons">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">                                                
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML5 logo">
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 logo">
+                                                <img src="./images/handlebars-original-wordmark.svg" alt="Handlebars logo">
+                                                <img src="./images/python-original.svg" alt="Python logo">
+                                                <img src="./images/flask-original-wordmark.svg" alt="Flask logo">                                                
                                             </div>
                                             <div class="description">
-                                                <h3 class="project-name">Flackt</h3>
+                                                <h3 class="project-name" id="project-title-3">Flackt</h3>
                                                 <p>A simple web-based chat application built using Flask and websocket technology.</p>                                        
-                                                <img src="" alt="">
+                                                <img src="./images/projects-related/Flackt.gif" alt="Demonstration of the chat feature of the Flackt web app" width="350px">
                                                 <div class="link-container">
-                                                    <a href="">View on Gihub</a>
+                                                    <a href="https://github.com/ThatDudeJude/Flackt.git" class="btn link-btn btn-dark btn-dark-glow" target="_blank">View on Github</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="project-card">
-                                        <div class="row">
+                                </div>
+                                <div>
+                                    <div class="project-card" role="button" tabindex="0" aria-expanded="false" aria-controls="flex-card4">
+                                        <div class="row" id="flex-card4" role="region" aria-labelledby="project-title-4">
                                             <div class="icons">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">                                                
-                                                <img src="" alt="">                                                
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML5 logo">
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 logo">
+                                                <img src="./images/python-original.svg" alt="Python logo">
+                                                <img src="./images/django-plain.svg" alt="Django logo">                                        
+                                                <img src="./images/bootstrap-original-wordmark.svg" alt="Bootstrap logo">                                        
+                                                <img src="./images/postgresql-original-wordmark.svg" alt="Postgresql logo">                                                
                                             </div>
                                             <div class="description">
-                                                <h3 class="project-name">Ez-Pizza</h3>
+                                                <h3 class="project-name" id="project-title-4">Ez-Pizza</h3>
                                                 <p>A mock web application for shopping and making online orders for pizza.</p>
-                                                <img src="" alt="">
+                                                <img src="./images/projects-related/Ez-Pizza.gif" alt="Demonstration of the shopping feature on the Ez-Pizza web app" width="350px">
                                                 <div class="link-container">
-                                                    <a href="">View on Gihub</a>
+                                                    <a href="https://github.com/ThatDudeJude/Ez-Pizza.git" class="btn link-btn btn-dark btn-dark-glow" target="_blank">View on Github</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="project-card">
-                                        <div class="row">
+                                    <div class="project-card" role="button" tabindex="0" aria-expanded="false" aria-controls="flex-card5">
+                                        <div class="row" id="flex-card5" role="region" aria-labelledby="project-title-5">
                                             <div class="icons">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">                                                
-                                                <img src="" alt="">                                                
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML5 logo">
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 logo">
+                                                <img src="./images/python-original.svg" alt="Python logo">
+                                                <img src="./images/django-plain.svg" alt="Django logo">
+                                                <img src="./images/htmx-original-wordmark.svg" alt="HTMX logo">
+                                                <img src="./images/postgresql-original-wordmark.svg" alt="Postgresql logo">                                                
                                             </div>
                                             <div class="description">
-                                                <h3 class="project-name">Django-HTMX-Tasks</h3>
+                                                <h3 class="project-name" id="project-title-5">Django-HTMX-Tasks</h3>
                                                 <p>A simple django- and htmx- based to-do app for noting and prioritizing tasks.</p>
-                                                <img src="" alt="">
+                                                <img src="./images/projects-related/Django-htmx_to-do_app.png" alt="The view all tasks page on the Django HTMX to-do web app" width="350px">
                                                 <div class="link-container">
-                                                    <a href="">View on Gihub</a>
+                                                    <a href="https://github.com/ThatDudeJude/Django-HTMX-Tasks.git" class="btn link-btn btn-dark btn-dark-glow" target="_blank">View on Github</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="project-card">
-                                        <div class="row">
+                                    <div class="project-card" role="button" tabindex="0" aria-expanded="false" aria-controls="flex-card6">
+                                        <div class="row" id="flex-card6" role="region" aria-labelledby="project-title-6">
                                             <div class="icons">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">
-                                                <img src="" alt="">                                                
-                                                <img src="" alt="">                                                
-                                                <img src="" alt="">                                                
-                                                <img src="" alt="">                                                
+                                                <img src="./images/html5-plain-wordmark.svg" alt="HTML5 logo">
+                                                <img src="./images/css3-original-wordmark.svg" alt="CSS3 logo">
+                                                <img src="./images/python-original.svg" alt="Python logo">
+                                                <img src="./images/javascript-original.svg" alt="Javascript logo">
+                                                <img src="./images/django-plain.svg" alt="Django logo">
+                                                <img src="./images/djangorest-original-wordmark.svg" alt="Django Rest Framework logo">
+                                                <img src="./images/react-original.svg" alt="React logo">
+                                                <img src="./images/postgresql-original-wordmark.svg" alt="Postgresql logo">                                                
                                             </div>
                                             <div class="description">
-                                                <h3 class="project-name">Jotify</h3>
+                                                <h3 class="project-name" id="project-title-6">Jotify</h3>
                                                 <p>A simple online productivity app for creating and saving notes and to-do lists built with a back-end api using Django Rest Framework and front-end using React.</p>
-                                                <img src="" alt="">
+                                                <img src="./images/projects-related/Jotify.gif" alt="A demonstration on how to save new tasks on the Jotify web app." width="350px">
                                                 <div class="link-container">
-                                                    <a href="">View on Gihub</a>
+                                                    <a style="margin: 0px 10px;" href="https://github.com/ThatDudeJude/Jotify-FE.git" class="btn link-btn btn-dark btn-dark-glow"target="_blank">View FE</a><a style="margin: 0px 10px;" href="https://github.com/ThatDudeJude/Jotify-BE.git" class="btn link-btn btn-dark btn-dark-glow" target="_blank">View BE</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -234,16 +246,23 @@
              </section>             
          </main>
          <footer class="site-footer">
-                <div>                    
-                    <p>&copy; Copyright 2025</i></p>
-                </div>
-                <div>
-                    <p>
-                        <a href="https://x.com/firstname_jude" ><img src="./images/twitter-original.svg" alt="X account for Jude"></a>
-                        <a href="https://github.com/ThatDudeJude"><img src="./images/github-original.svg" alt="Github Profile for Jude"></a>
-                    </p>
-                </div>
+            <div>                    
+                <p>&copy; Copyright 2025</i></p>
+            </div>
+            <div class="nav-links flex-column-center">
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">My Projects</>
+                <a href="./contact.html">Contact Me</a>
+            </div>
+            <div>
+                <p>
+                    <a href="https://x.com/firstname_jude" ><img src="./images/twitter-original.svg" alt="X account for Jude"></a>
+                    <a href="https://github.com/ThatDudeJude"><img src="./images/github-original.svg" alt="Github Profile for Jude"></a>
+                </p>
+            </div>
         </footer>                    
     </div>
+    <script src="js/nav-script.js"></script>
+    <script src="js/flex-cards-script.js"></script>
 </body>
 </html>

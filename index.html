@@ -21,9 +21,9 @@
                     <div class="burger"><div class="bars"></div></div>
                     <div class="nav-list">
                         <ul>
-                            <li><a class="active btn link-btn btn-white-glow" href="">Home</a></li>
-                            <li><a class="btn link-btn btn-white-glow" href="">My Projects</a></li>
-                            <li><a class="btn link-btn btn-white-glow" href="">Contact Me</a></li>
+                            <li><a class="active btn link-btn btn-white-glow" href="index.html">Home</a></li>
+                            <li><a class="btn link-btn btn-white-glow" href="projects.html">My Projects</a></li>
+                            <li><a class="btn link-btn btn-white-glow" href="contact.html">Contact Me</a></li>
                         </ul>
                     </div>
                  </nav>
@@ -31,19 +31,20 @@
         </header>
 
         <!-- Main Content -->
-         <main >
+         <main class="flex-column" role="main">
+
             <!-- Showcase -->
              <section class="showcase">
-                <div class="showcase-container">
+                <div class="showcase-container py-5">
                     <article class="showcase-items">
                         <div class="showcase-image">
                             <div class="my-picture">
-                                <img>
+                                <img src="./images/Jude_Gachoki_Muthini.JPG" alt="Portrait of Jude Muthini">
                             </div>
                         </div>
-                        <div class="showcase-text">
-                            <p>Jude Muthini</p>
-                            <p>Budding Web Developer and AI Specialist</p>
+                        <div class="showcase-text m-3">
+                            <p class="lg my-2">Jude Muthini</p>
+                            <p class="md">Budding Web Developer and AI Specialist</p>
                         </div>
                     </article>
                 </div>
@@ -54,33 +55,37 @@
                 <div class="intro-container">
                     <!-- About Me -->
                      <article id="about-me" class="about-me">
-                        <div>
-                            <div>
+                        <div class="container grid-3-col py-3 p-2">
+                            <div class="about-me-card info-card-dark my-1">
                                 <h1>About Me</h1>
                                 <p>am a highly-motivated active learner willing to apply creativity in problem-solving with the aid of scientific knowledge, technology and programming.</p>
                             </div>  
-                            <div class="about-me-image">
-                                <img src="" alt="">
-                                <img src="" alt="">
+                            <div class="about-me-image m-2">
+                                <img src="./images/Robot_hand_reaching_out_to_human_hand.jpg" id="robot-hand-original" alt="Robot hand reaching out to human hand">
+                                <img src="./images/Robot_hand_reaching_out_to_human_hand-clipped.jpg" id="robot-hand-clipped" alt="Robot hand reaching out to human hand">
                             </div>                                                          
                         </div>
                      </article>
                      <!-- Education -->
                       <article class="educational-background">
-                        <div class="container">
-                            <div class="educational-background-image">
-                                <h1>Education</h1>
-                                <p>I have a BS honors degree in Astronomy and Astrophysics from the University of Nairobi, Kenya and also been learning web development for 2 years now by building
-                                    beginner to intermediate level projects.
-                                </p>
+                        <div class="container grid-2-col">
+                            <div class="educational-background-image my-1">
+                                <img src="./images/Library_Shelves_With_books.jpg" alt="Library shelves with books" width="300px">
                             </div>
-                        </div>
+                            <div class="educational-background-card info-card">
+                                <h1>Education</h1>
+                                <p class="my-1">I have a BS honors degree in Astronomy and Astrophysics from the University of Nairobi, Kenya and have also been learning web development for 2 years now by building 
+                                    beginner to intermediate level projects.
+                                </p>                        
+                                <a href="https://drive.google.com/file/d/1yYriGQwRBabgpXLc6xkbatWI2pFWA6Lk/view?usp=drivesdk" download="Jude_Muthini_CV.pdf" class="btn link-btn btn-dark btn-dark-glow">Dowload my CV</a>
+                            </div>
+                        </div>                    
                       </article>
 
                       <!-- Interests -->
-                       <article class="interests">
-                            <div class="container">
-                                <div class="my-interests-card">
+                       <article class="interests py-3">
+                            <div class="container grid-3-col">
+                                <div class="my-interests-card info-card-dark">
                                     <h1>My Interests</h1>
                                     <p>I am currently building my skills in full-stack web development using modern tools like React, Django, Flask and Javascript.
                                         <br>
@@ -89,12 +94,13 @@
                                         areas that I find exciting for their potential to transform how we build and interact with 
                                         technology.
                                     </p>
+                                    <a href="projects.html" class="btn btn-white link-btn btn-white-glow">View My Projects</a>
                                 </div>
                                 <div class="interests-image-1">
-                                    <img src="" alt="">                                    
+                                    <img src="./images/Robot_hand.jpg" alt="Robot hand stretching upwards" >
                                 </div>
                                 <div class="interests-image-2">
-                                    <img src="" alt="">
+                                    <img src="./images/Computer_note-book_pen_and_a_cup_of_coffee_on_a_table.jpg" alt="A computer, a note-book, a pen and a cup of coffee on a table">
                                 </div>
                             </div>
                        </article>
@@ -116,6 +122,11 @@
                 <div>                    
                     <p>&copy; Copyright 2025</i></p>
                 </div>
+                <div class="nav-links flex-column-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./projects.html">My Projects</>
+                    <a href="./contact.html">Contact Me</a>
+                </div>
                 <div>
                     <p>
                         <a href="https://x.com/firstname_jude" ><img src="./images/twitter-original.svg" alt="X account for Jude"></a>
@@ -124,6 +135,6 @@
                 </div>
         </footer>                        
     </div>
-    <script src="js/mobile-nav-toggle.js"></script>
+    <script src="js/nav-script.js"></script>
 </body>
 </html>
